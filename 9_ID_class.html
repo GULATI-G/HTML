@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div, span, ID, class</title>
+    <!-- Style tag is just used for styling which is done in css but we can do it here also. -->
+    <style>  
+        .card
+        {
+            border: 1px solid #ccc;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .enhance
+        {
+            color: yellow;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- In css we can grab different ID and style them -->
+    <!-- ID is not same for 2 differnt tags but classes can be same. eg we want same properties to be applied to 2 different tags
+    then we can give them the same class -->
+
+    <!-- div is block line and pushes next tag or text to next line -->
+    <!-- span doesn't as it is an inline element. look at about section in this html page -->
+    <div id="main_header"> 
+        <h1>My Website</h1>
+        <p>A site about me</p>
+    </div>
+
+    <ul id="main_nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div id="about" class="card">
+        <h3>About</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda soluta harum officia nemo sed doloremque provident 
+            consequuntur. <div class="enhance"> Aspernatur ex mollitia, unde architecto quod dicta earum sit dolorum quae officia ab praesentium eaque 
+            consequuntur officiis quia nihil a quisquam </div>deleniti repudiandae perferendis aperiam impedit? Delectus ipsa quaerat 
+            omnis, possimus veniam dolor minima sapiente eum esse nemo voluptate tempora Quis natus voluptatibus consequuntur fugit 
+            reiciendis qui adipisci officia eos velit perspiciatis ipsa laudantium illum, <span class="enhance"> libero dolore debitis earum quibusdam 
+            voluptatibus facilis nihil nulla reprehenderit expedita optio quod.</span>magnam corrupti autem sequi 
+            explicabo deserunt sapiente exercitationem! Expedita, rerum quae sed quas unde vero!
+        </p> 
+    </div>
+    
+    <div id="Contact Me" class="card">
+        <ul> 
+            <li>Address</li>
+            <li>Phone Number</li>
+            <li>Email Address</li>
+        </ul>
+    </div>
+
+    <div id="footer">
+        <h3>Copyrights 2022</h3>
+    </div>
+
+</body>
+</html>

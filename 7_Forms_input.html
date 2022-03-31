@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Inputs</title>
+</head>
+<body>
+    <form action=""> <!-- action is where your form will be submitted which can be a php/javascript file to maybe integrate
+    with a data base  -->
+    
+    <!-- Text -->
+    <div>  <!-- div is just used to separate different components in markup language. -->
+        <label for="name">Name</label> <br> <!-- label is an what type of input we r giving or what will be displayed in front of that input
+        . for attribute is for the id of the input--> 
+        <input type="text" id="name" name="name" value="Enter Name"> <!-- this is tag for taking input. type is of what type. id is used so that when we use label
+        it highlights the input telling where to give input. name attribute is used for server side which is used to grab the value 
+        which in this case is name. Value is when you want something already written in that box. -->
+    </div>
+
+    <!-- Email -->
+    <div> 
+        <label for="email">Email</label> <br>
+        <input type="email" name="email" id="email" placeholder="Enter Email"><!-- placeholder is used when we want to indicate what
+        user has to write here. In value attribute the user would have to first erase the text of Enter Email and then write the email
+        whereas in placeholder user can start writing simply-->
+    </div>
+
+    <!-- Big Text  -->
+    <div>
+        <label for="message">Message</label> <br> <!-- this is for a long message eg. bio or paragraph-->
+        <textarea name="message" id="message" cols="50" rows="10"></textarea> <!-- this is a separate tag for long messages-->
+    </div>
+
+    <!-- Drop down select list -->
+    <div>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">Gender
+            <option value="male">Male</option> <!--  options are for different drop down options -->
+            <option value="female" selected>Female </option><!-- if you want this to be already checked 
+                when the page loads up so we add selected attribute -->
+            <option value="other">Other</option>
+        </select> 
+    </div>
+
+    <!-- Number Input -->
+    <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age"> <!-- takes int as number as input except letter e which also can be used -->
+    </div>
+
+    <!-- Date Input -->
+    <div>
+        <label for="birthday">Birthdate</label> <br>
+        <input type="date" name="birthday" id="birthday"> 
+    </div>
+
+    <!-- Selecting single option MCQ -->
+    <div>
+        <label for="membership">Membership</label><br>
+        <input type="radio" name="membership" id="membership" value="standard" checked>Standard <!-- if you want this to be already checked 
+        when the page loads up so we add checked attribute. With radio we can only choose one option  -->
+        <input type="radio" name="membership" id="membership" value="premium">Premium
+        <input type="radio" name="membership" id="membership" value="gold">Gold
+    </div>
+
+    <!-- Selecting multiple options MCQ -->
+    <div>
+        <label for="Hobbies">Hobbies</label><br>
+        <input type="checkbox" name="Hobbies" id="Hobbies" value="bike">Bike <!-- checkbox allows to select multiple
+        options unlike radio. In this case value is the actual data which is sent to the server. Again checked can be used if we
+        want anything to be pre selected. -->
+        <input type="checkbox" name="Hobbies" id="Hobbies" value="reading books">Reading Books
+        <input type="checkbox" name="Hobbies" id="Hobbies" value="swimming">Swimming
+    </div>
+
+    <!-- Submission -->
+    <div> 
+        <!-- Now different ways to submit -->
+        <input type="submit" value="Submit"> <br> <!-- value is what will be displayed inside that box-->
+        <!-- using button tag -->
+        <button type="submit">Submit</button> <br>
+    </div>
+
+    <div>
+        <!-- To reset the form -->
+        <button type="reset">Reset </button>
+    </div>
+
+    </form>
+</body>
+</html>

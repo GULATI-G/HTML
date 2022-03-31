@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists & Tables</title>
+</head>
+<body>
+    <!-- Unordered Lists which have bullet points -->
+    <ul style="list-style: square;"> <!-- style changes the shape of the bullet. Default is disc 
+        which is filled circle. Circle means hollow circle. none removes the bullet. However styling should 
+        be done in css and not here (recomended) -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <!-- Ordered Lists --> 
+    <ol type="A"> <!-- 1 is default type. We can change it to A,a,I,i -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+
+    <!-- Nested Lists -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2
+            <ul>
+                <li>Nested Item 1</li> <!-- Nested by deafult has circle as style -->
+                <li>Nested Item 2</li>
+                <li>Nested Item 3</li>
+            </ul>
+        </li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <!-- Tables -->
+    <table style="width: 400px;">  <!-- Initialises the table -->
+        <thead>  <!-- It defines the header -->
+            <tr>   <!-- It makes a new row -->
+                <th>First Name</th>  <!-- It is used for header content -->
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody> <!-- It defines the rest of the table -->
+            <tr>
+                <td>Gaurav</td>
+                <td>Gulati</td>
+                <td>gauravg@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Pankaj</td>
+                <td>Tripathi</td>
+                <td>pankajt@gmail.com.com</td>
+            </tr>
+            <tr>
+                <td>Aamir</td>
+                <td>Khan</td>
+                <td>aamirk@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

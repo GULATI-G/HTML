@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entities</title>
+</head>
+<body>
+    <!-- List of Entities -->
+    <!-- https://www.w3schools.com/html/html_entities.asp -->
+
+    <!-- Non Breaking space -->
+    <p>My name is             Gaurav </p>
+    <!-- The browser will not see these multiple spaces and hence won't render it like that -->
+    <!-- Now with below code browser will -->
+    <p>My name is &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gaurav</p> 
+
+   <!-- Copyright -->
+   <p>Copyright &copy; 2022 </p>
+
+   <!-- Angular Brackets -->
+   <p>5 > 2</p> <!-- Some browsers understand the brakcet but some comprehend it as ending bracket of a tag.
+    So use, -->
+    <p>5 &gt; 2</p> <!-- Greater than -->
+    <p>5 &#62; 2</p> <!-- We can use numbers as well -->
+    <p>5 &lt; 10</p> <!-- Less than --> 
+    <p>5 &#60; 10</p> <!-- We can use numbers as well -->
+
+    <!-- Trademark -->
+    <p>&reg;</p>
+
+    <!-- Currency -->
+    <p>&#8377;</p>
+    <p>&euro;;</p>
+    <p>&dollar;;</p>
+    <p>&cent;</p>
+    <p>&yen;</p>
+    <br>
+
+    <!-- Card suites -->
+    <p>&diams;</p>
+    <p>&clubs;</p>
+    <p>&spades;</p>
+    <p>&hearts;</p>
+
+    <!-- Computer Code -->
+    <code>
+        <!-- <?php echo 'hello' ?>     is how you write it-->
+        &lt;?php echo 'hello' ?&gt; <!-- This is how you would paste a code snippet -->
+    </code>
+
+    <!-- Keyboard -->
+    <p>To save a file press <kbd>Comm. + S</kbd> </p>
+    <!-- Notice Text in kbd tag is of same font as that of code -->
+     
+</body>
+</html>
